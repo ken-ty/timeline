@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:timeline/menu.dart';
 import 'package:timeline/my_home_page.dart';
 
 class App extends StatelessWidget {
@@ -9,7 +10,7 @@ class App extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       title: 'Flutter Demo',
-      home: MyHomePage(title: 'Flutter Demo Home Page'),
+      home: Menu(),
     );
   }
 }

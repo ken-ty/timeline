@@ -1,0 +1,56 @@
+@startuml
+set namespaceSeparator ::
+
+class "timeline::my_home_page2.dart::MyHomePage2" {
+  +String title
+  +State<MyHomePage2> createState()
+}
+
+"flutter::src::widgets::framework.dart::StatefulWidget" <|-- "timeline::my_home_page2.dart::MyHomePage2"
+
+class "timeline::my_home_page2.dart::_MyHomePage2State" {
+  -int _counter
+  -void _incrementCounter()
+  +Widget build()
+}
+
+"flutter::src::widgets::framework.dart::State" <|-- "timeline::my_home_page2.dart::_MyHomePage2State"
+
+class "timeline::menu.dart::Menu" {
+  +State<Menu> createState()
+}
+
+"flutter::src::widgets::framework.dart::StatefulWidget" <|-- "timeline::menu.dart::Menu"
+
+class "timeline::menu.dart::_MenuState" {
+  -List<StatefulWidget> _pages
+  -int _pageIndex
+  -void _onItemTapped()
+  +Widget build()
+}
+
+"flutter::src::widgets::framework.dart::State" <|-- "timeline::menu.dart::_MenuState"
+
+class "timeline::my_home_page.dart::MyHomePage" {
+  +String title
+  +State<MyHomePage> createState()
+}
+
+"flutter::src::widgets::framework.dart::StatefulWidget" <|-- "timeline::my_home_page.dart::MyHomePage"
+
+class "timeline::my_home_page.dart::_MyHomePageState" {
+  -int _counter
+  -void _incrementCounter()
+  +Widget build()
+}
+
+"flutter::src::widgets::framework.dart::State" <|-- "timeline::my_home_page.dart::_MyHomePageState"
+
+class "timeline::app.dart::App" {
+  +Widget build()
+}
+
+"flutter::src::widgets::framework.dart::StatelessWidget" <|-- "timeline::app.dart::App"
+
+
+@enduml

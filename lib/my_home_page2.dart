@@ -1,16 +1,15 @@
 import 'package:flutter/material.dart';
-import 'package:timeline/my_home_page2.dart';
 
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({super.key, required this.title});
+class MyHomePage2 extends StatefulWidget {
+  const MyHomePage2({super.key, required this.title});
 
   final String title;
 
   @override
-  State<MyHomePage> createState() => _MyHomePageState();
+  State<MyHomePage2> createState() => _MyHomePage2State();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
+class _MyHomePage2State extends State<MyHomePage2> {
   int _counter = 0;
 
   void _incrementCounter() {
@@ -24,12 +23,6 @@ class _MyHomePageState extends State<MyHomePage> {
     return Scaffold(
       appBar: AppBar(
         title: Text(widget.title),
-        actions: [
-          TextButton(
-            onPressed: () => const MyHomePage2(title: "title"),
-            child: const Text("page移動"),
-          ),
-        ],
       ),
       body: Center(
         child: Column(
