@@ -31,14 +31,26 @@ class _MyHomePageState extends State<MyHomePage> {
         Expanded(
           child: Container(
             color: Colors.red,
-            child: const Padding(
+            child: Padding(
               padding: EdgeInsets.all(8.0),
               child: Card(
                 color: Colors.amber,
                 child: Center(
-                    child: Text(
-                  "一旦メモリだけスクロール"
-                  "できるようにした",
+                    child: Column(
+                  children: [
+                    const Text(
+                      "一旦メモリだけスクロール"
+                      "できるようにした",
+                    ),
+                    ElevatedButton(
+                      onPressed: () => {},
+                      child: const Text("ボタン1"),
+                    ),
+                    ElevatedButton(
+                      onPressed: () => {},
+                      child: const Text("ボタン1"),
+                    )
+                  ],
                 )),
               ),
             ),
