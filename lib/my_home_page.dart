@@ -16,7 +16,7 @@ class _MyHomePageState extends State<MyHomePage> {
     for (int i = 0; i < 1000; i++) {
       eraList.add(i);
     }
-    var eras = eraList.map((e) => ListTile(title: Text(e.toString())));
+    var eras = eraList.map((e) => Text(e.toString()));
     return Row(
       children: [
         SizedBox(
@@ -32,26 +32,28 @@ class _MyHomePageState extends State<MyHomePage> {
           child: Container(
             color: Colors.red,
             child: Padding(
-              padding: EdgeInsets.all(8.0),
+              padding: const EdgeInsets.all(8.0),
               child: Card(
                 color: Colors.amber,
                 child: Center(
-                    child: Column(
-                  children: [
-                    const Text(
-                      "一旦メモリだけスクロール"
-                      "できるようにした",
-                    ),
-                    ElevatedButton(
-                      onPressed: () => {},
-                      child: const Text("ボタン1"),
-                    ),
-                    ElevatedButton(
-                      onPressed: () => {},
-                      child: const Text("ボタン1"),
-                    )
-                  ],
-                )),
+                  child: Column(
+                    mainAxisSize: MainAxisSize.min,
+                    children: [
+                      const Text(
+                        "一旦メモリだけスクロール"
+                        "できるようにした",
+                      ),
+                      ElevatedButton(
+                        onPressed: () => {},
+                        child: const Text("ボタン1"),
+                      ),
+                      ElevatedButton(
+                        onPressed: () => {},
+                        child: const Text("ボタン1"),
+                      ),
+                    ],
+                  ),
+                ),
               ),
             ),
           ),
