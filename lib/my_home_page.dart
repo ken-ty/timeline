@@ -10,6 +10,8 @@ class MyHomePage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<MyHomePage> {
+  double currentSliderValue = 0.0;
+
   @override
   Widget build(BuildContext context) {
     List<int> eraList = [];
@@ -50,6 +52,17 @@ class _MyHomePageState extends State<MyHomePage> {
                       ElevatedButton(
                         onPressed: () => {},
                         child: const Text("ボタン1"),
+                      ),
+                      Slider(
+                        value: currentSliderValue,
+                        max: 100,
+                        divisions: 5,
+                        label: currentSliderValue.round().toString(),
+                        onChanged: (double value) {
+                          setState(() {
+                            currentSliderValue = value;
+                          });
+                        },
                       ),
                     ],
                   ),
