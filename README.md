@@ -5,7 +5,7 @@ timeline のサンプル.
 https://github.com/2d-inc/HistoryOfEverything の timeline と同様な動作を作成する.
 
 
-![画像](assets/images/flutter_01.png)
+![画像](https://gyazo.com/ca42ebf7df81cf0f631aa6095bae9941/raw)
 
 ## Getting Started
 
