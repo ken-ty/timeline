@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:timeline/menu.dart';
+import 'package:timeline/widgets/menu.dart';
 
+/// アプリの root Widget を提供
 class App extends StatelessWidget {
   const App({super.key});
 
-  // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(

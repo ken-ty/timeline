@@ -1,9 +1,7 @@
 import 'package:flutter/material.dart';
 
 class MyHomePage2 extends StatefulWidget {
-  const MyHomePage2({super.key, required this.title});
-
-  final String title;
+  const MyHomePage2({super.key});
 
   @override
   State<MyHomePage2> createState() => _MyHomePage2State();
@@ -21,9 +19,6 @@ class _MyHomePage2State extends State<MyHomePage2> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text(widget.title),
-      ),
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
