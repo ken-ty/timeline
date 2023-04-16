@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 import 'package:timeline/widgets/era.dart';
 
-class MyHomePage extends StatefulWidget {
-  const MyHomePage({super.key});
+class V1 extends StatefulWidget {
+  const V1({super.key});
 
   @override
-  State<MyHomePage> createState() => _MyHomePageState();
+  State<V1> createState() => _V1State();
 }
 
-class _MyHomePageState extends State<MyHomePage> {
+class _V1State extends State<V1> {
   double currentSliderValue = 0.0;
 
   @override

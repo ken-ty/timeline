@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class MyHomePage2 extends StatefulWidget {
-  const MyHomePage2({super.key});
+class V2 extends StatefulWidget {
+  const V2({super.key});
 
   @override
-  State<MyHomePage2> createState() => _MyHomePage2State();
+  State<V2> createState() => _V2State();
 }
 
-class _MyHomePage2State extends State<MyHomePage2> {
+class _V2State extends State<V2> {
   int _counter = 0;
 
   void _incrementCounter() {
